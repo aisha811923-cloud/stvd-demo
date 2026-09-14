@@ -1,0 +1,12 @@
+# Cursor Rules & Standards
+
+- **TypeScript:** Strict mode enabled. Discriminated unions for UI states: `idle` | `loading` | `success` | `error`.
+- **Styling:** Tailwind CSS only. Avoid inline style blocks unless calculating dynamic CSS transform values.
+- **Color Token Enforcement:** Use only brand-specific tokens: `navy-950`, `navy-900`, `gold-500`, `crimson-800`, `parchment`.
+- **Imports Order:**
+  1. React & Next.js core modules
+  2. Third-party packages (Framer Motion, Lucide icons)
+  3. Local components (`@/components/...`)
+  4. Services & Database clients (`@/lib/...`)
+  5. Types & Interfaces (`@/types/...`)
+- **Accessibility:** All `<button>` and `<input>` elements must include `aria-label`, visible focus rings (`focus-visible:ring-2 focus-visible:ring-gold-500`), and accessible color contrast ratios (> 4.5:1).
