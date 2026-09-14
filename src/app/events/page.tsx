@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Calendar as CalendarIcon } from "lucide-react";
 import { EventsView } from "@/components/events/EventsView";
-import { CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
+import { EventsHeroMotion } from "@/components/events/EventsHeroMotion";
 
 export const metadata: Metadata = {
   title: "Campus Events & Academic Calendar",
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
 export default function EventsPage() {
   return (
     <div className="flex flex-col min-h-screen bg-navy-950">
-      {/* 1. Seamless Hero Header */}
+      {/* 1. Seamless Hero Header with Motion Reveal */}
       <section className="bg-navy-gradient text-white pt-28 pb-16 md:pt-36 md:pb-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden border-b border-gold-500/20">
         <div
           className="absolute top-0 right-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"
@@ -38,21 +37,7 @@ export default function EventsPage() {
           className="absolute bottom-0 left-1/4 w-80 h-80 bg-crimson-800/15 rounded-full blur-3xl pointer-events-none"
           aria-hidden="true"
         />
-
-        <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/30 text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
-            <CalendarIcon className="w-3.5 h-3.5 text-gold-400" />
-            <span>Campus Life & Institutional Calendar • Session {CURRENT_ACADEMIC_SESSION}</span>
-          </div>
-
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-tight">
-            Events & <span className="gold-gradient-text">Celebrations</span>
-          </h1>
-
-          <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-sans">
-            Experience the vibrant life at St. Teresa Vidya Deep. From intense athletic championships and scientific expos to moral conclaves and cultural galas in Udaipur.
-          </p>
-        </div>
+        <EventsHeroMotion />
       </section>
 
       {/* 2. Interactive Events & Filterable View */}
