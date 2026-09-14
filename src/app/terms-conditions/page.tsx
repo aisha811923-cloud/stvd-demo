@@ -12,7 +12,7 @@ import {
   MapPin,
   ArrowRight,
 } from "lucide-react";
-import { SCHOOL_INFO } from "@/lib/data/school-data";
+import { SCHOOL_INFO, CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions | Institutional Regulations",
@@ -68,7 +68,7 @@ export default function TermsConditionsPage() {
           </p>
 
           <div className="pt-2 flex items-center justify-center gap-4 text-xs text-slate-400">
-            <span>Effective Date: Academic Session 2026–27</span>
+            <span>Effective Date: Academic Session {CURRENT_ACADEMIC_SESSION}</span>
             <span>•</span>
             <span>Last Reviewed: {lastUpdated}</span>
           </div>

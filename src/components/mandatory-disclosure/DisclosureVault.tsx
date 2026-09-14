@@ -13,7 +13,7 @@ import {
   ExternalLink,
   Award,
 } from "lucide-react";
-import { SCHOOL_INFO } from "@/lib/data/school-data";
+import { SCHOOL_INFO, CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 
 export const DisclosureVault: React.FC = () => {
   const [activeTab, setActiveTab] = useState("all");
@@ -91,19 +91,19 @@ export const DisclosureVault: React.FC = () => {
     },
     {
       id: "doc-8",
-      title: "Fee Structure of the School (Session 2026–27)",
+      title: `Fee Structure of the School (Session ${CURRENT_ACADEMIC_SESSION})`,
       category: "Academic",
       issuingAuthority: "School Management Committee (SMC)",
-      validity: "Academic Year 2026–27",
-      fileName: "fee_structure_2026_27.pdf",
+      validity: `Academic Year ${CURRENT_ACADEMIC_SESSION}`,
+      fileName: "fee_structure_2027_28.pdf",
     },
     {
       id: "doc-9",
       title: "Annual Academic Calendar & Examination Schedule",
       category: "Academic",
       issuingAuthority: "Academic Directorate, STVDS",
-      validity: "April 2026 – March 2027",
-      fileName: "academic_calendar_2026_27.pdf",
+      validity: "April 2027 – March 2028",
+      fileName: "academic_calendar_2027_28.pdf",
     },
     {
       id: "doc-10",
@@ -118,7 +118,7 @@ export const DisclosureVault: React.FC = () => {
       title: "List of Parents-Teachers Association (PTA) Members",
       category: "Governance",
       issuingAuthority: "PTA Executive Council, STVDS",
-      validity: "Session 2026–27",
+      validity: `Session ${CURRENT_ACADEMIC_SESSION}`,
       fileName: "pta_members_list.pdf",
     },
     {

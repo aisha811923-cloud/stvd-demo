@@ -7,7 +7,7 @@ import { AboutPrincipalMotion } from "@/components/about/AboutPrincipalMotion";
 import { AboutGovernanceMotion } from "@/components/about/AboutGovernanceMotion";
 import { AboutAnthemCard } from "@/components/about/AboutAnthemCard";
 import { AboutPillarsMotion } from "@/components/about/AboutPillarsMotion";
-import { SCHOOL_INFO, SCHOOL_ANTHEM } from "@/lib/data/school-data";
+import { SCHOOL_INFO, SCHOOL_ANTHEM, CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 import { Quote, Phone, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -95,7 +95,7 @@ export default function AboutPage() {
                     <p className="mt-0.5">{SCHOOL_INFO.address.line1}, {SCHOOL_INFO.address.line2}</p>
                   </div>
                   <div className="text-right">
-                    <p className="font-semibold text-navy-900">Academic Session 2026–27</p>
+                    <p className="font-semibold text-navy-900">Academic Session {CURRENT_ACADEMIC_SESSION}</p>
                     <p className="text-gold-600 font-serif italic">Motto: &ldquo;{SCHOOL_INFO.motto}&rdquo;</p>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ export default function AboutPage() {
                   </p>
 
                   <p className="text-slate-700">
-                    To our prospective parents seeking admission for the 2026–27 session: we consider the education of your child a collaborative covenant. The strongest education occurs when the school and the home share the same aspirations of truth, humility, and diligent effort. We invite you to visit our Saveena campus, walk through our laboratories, and witness the joy of discovery that animates our community every day.
+                    To our prospective parents seeking admission for the {CURRENT_ACADEMIC_SESSION} session: we consider the education of your child a collaborative covenant. The strongest education occurs when the school and the home share the same aspirations of truth, humility, and diligent effort. We invite you to visit our Saveena campus, walk through our laboratories, and witness the joy of discovery that animates our community every day.
                   </p>
                 </div>
 

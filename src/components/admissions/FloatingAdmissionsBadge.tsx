@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { PhoneCall, Sparkles } from "lucide-react";
 import { useAdmissionsModal } from "@/context/AdmissionsModalContext";
+import { CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 
 export const FloatingAdmissionsBadge: React.FC = () => {
   const { openModal } = useAdmissionsModal();
@@ -35,7 +36,7 @@ export const FloatingAdmissionsBadge: React.FC = () => {
           <button
             onClick={() => openModal()}
             className="group relative inline-flex items-center gap-2.5 px-4 py-3 rounded-full bg-navy-950 text-white border-2 border-gold-500/50 shadow-gold-glow hover:shadow-gold-glow-lg hover:border-gold-400 hover:scale-105 active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2"
-            aria-label="Open Admissions 2026-27 Callback Request"
+            aria-label={`Open Admissions ${CURRENT_ACADEMIC_SESSION} Callback Request`}
           >
             {/* Live Green Pulsing Indicator */}
             <span className="relative flex h-2.5 w-2.5 shrink-0">
@@ -49,7 +50,7 @@ export const FloatingAdmissionsBadge: React.FC = () => {
             {/* Text Label */}
             <div className="flex flex-col text-left">
               <span className="text-[11px] font-bold tracking-wider uppercase text-gold-400 font-sans">
-                Admissions 2026–27
+                Admissions {CURRENT_ACADEMIC_SESSION}
               </span>
               <span className="hidden sm:inline text-[10px] text-slate-300 font-medium leading-none">
                 Request Quick Callback

@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import { Calendar as CalendarIcon } from "lucide-react";
 import { EventsView } from "@/components/events/EventsView";
+import { CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 
 export const metadata: Metadata = {
   title: "Campus Events & Academic Calendar",
   description:
-    "Discover upcoming CBSE academic events, sports championships, and cultural galas at St. Teresa Vidya Deep, Udaipur. Download Session 2026–27 calendar.",
+    "Discover upcoming CBSE academic events, sports championships, and cultural galas at St. Teresa Vidya Deep, Udaipur. Download Session 2027–2028 calendar.",
   keywords: [
     "School Events Udaipur",
-    "St Teresa Vidya Deep Calendar 2026-27",
+    "St Teresa Vidya Deep Calendar 2027-28",
     "CBSE Annual Sports Meet Udaipur",
     "Science Exhibition Saveena School",
     "School PTM Schedule Udaipur",
@@ -41,7 +42,7 @@ export default function EventsPage() {
         <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 text-gold-400 border border-gold-500/30 text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
             <CalendarIcon className="w-3.5 h-3.5 text-gold-400" />
-            <span>Campus Life & Institutional Calendar • Session 2026–27</span>
+            <span>Campus Life & Institutional Calendar • Session {CURRENT_ACADEMIC_SESSION}</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-tight">

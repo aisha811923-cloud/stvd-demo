@@ -14,7 +14,7 @@ import {
   HelpCircle,
   ArrowRight,
 } from "lucide-react";
-import { SCHOOL_INFO } from "@/lib/data/school-data";
+import { SCHOOL_INFO, CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export const metadata: Metadata = {
@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
                 Summary of Our Data Guarantee
               </h2>
               <p className="text-sm text-slate-700 leading-relaxed">
-                We collect personal information solely to process prospective student admissions inquiries, arrange campus walkthroughs, and provide guidance for the 2026–27 academic session. <strong className="text-navy-950 font-semibold">We never sell, rent, commercialize, or share parental or student data with third-party marketers or commercial advertisers.</strong>
+                We collect personal information solely to process prospective student admissions inquiries, arrange campus walkthroughs, and provide guidance for the {CURRENT_ACADEMIC_SESSION} academic session. <strong className="text-navy-950 font-semibold">We never sell, rent, commercialize, or share parental or student data with third-party marketers or commercial advertisers.</strong>
               </p>
             </div>
           </div>

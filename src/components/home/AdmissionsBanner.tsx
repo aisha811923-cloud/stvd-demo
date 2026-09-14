@@ -4,7 +4,7 @@ import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { Phone, MessageCircle, ArrowRight, Clock, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { SCHOOL_INFO } from "@/lib/data/school-data";
+import { SCHOOL_INFO, CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 import { useAdmissionsModal } from "@/context/AdmissionsModalContext";
 import { fadeInUp } from "@/lib/animations";
 
@@ -37,7 +37,7 @@ export const AdmissionsBanner: React.FC = () => {
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-crimson-800/80 text-gold-400 border border-gold-500/30 text-xs font-semibold tracking-wider uppercase">
                 <span className="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse" />
-                <span>Admissions 2026–27 Open • Limited Intake</span>
+                <span>Admissions {CURRENT_ACADEMIC_SESSION} Open • Limited Intake</span>
               </div>
 
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif font-bold text-white tracking-tight leading-tight">
@@ -91,7 +91,7 @@ export const AdmissionsBanner: React.FC = () => {
                   className="w-full shadow-gold-glow"
                   onClick={() => openModal()}
                 >
-                  Apply for 2026-27
+                  Apply for {CURRENT_ACADEMIC_SESSION}
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
 
@@ -106,7 +106,7 @@ export const AdmissionsBanner: React.FC = () => {
 
                   <a
                     href={`https://wa.me/${SCHOOL_INFO.whatsapp.replace(/\D/g, "")}?text=${encodeURIComponent(
-                      "Hello St. Teresa Vidya Deep Admissions Office, I would like to inquire about admission for the 2026-27 session."
+                      `Hello St. Teresa Vidya Deep Admissions Office, I would like to inquire about admission for the ${CURRENT_ACADEMIC_SESSION} session.`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"

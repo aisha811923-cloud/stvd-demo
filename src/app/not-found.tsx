@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Compass, Home, ArrowRight, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SchoolCrest } from "@/components/ui/SchoolCrest";
+import { CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 
 export default function NotFound() {
   return (
@@ -56,7 +57,7 @@ export default function NotFound() {
 
           <Link href="/admissions">
             <Button variant="outline-gold" size="lg">
-              Explore Admissions 2026–27
+              Explore Admissions {CURRENT_ACADEMIC_SESSION}
               <ArrowRight className="w-4 h-4 ml-1.5" />
             </Button>
           </Link>

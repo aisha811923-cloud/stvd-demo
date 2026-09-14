@@ -6,7 +6,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Compass, ShieldCheck, MapPin, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SchoolCrest } from "@/components/ui/SchoolCrest";
-import { SCHOOL_INFO } from "@/lib/data/school-data";
+import { SCHOOL_INFO, CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 import { useAdmissionsModal } from "@/context/AdmissionsModalContext";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 
@@ -64,7 +64,7 @@ export const Hero: React.FC = () => {
               className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-gold-500/10 hover:bg-gold-500/20 text-gold-400 border border-gold-500/30 text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-md shadow-sm transition-colors cursor-pointer"
             >
               <span className="w-2 h-2 rounded-full bg-gold-400 animate-pulse" />
-              <span>Admissions Open for Academic Year 2026–27 | Nursery to Class XII</span>
+              <span>Admissions Open for Academic Year {CURRENT_ACADEMIC_SESSION} | Nursery to Class XII</span>
             </button>
           </motion.div>
 

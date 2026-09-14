@@ -9,7 +9,7 @@ import {
   ShieldCheck,
   ChevronRight,
 } from "lucide-react";
-import { SCHOOL_INFO, NAV_ITEMS, ACADEMIC_WINGS } from "@/lib/data/school-data";
+import { SCHOOL_INFO, NAV_ITEMS, ACADEMIC_WINGS, CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -96,7 +96,7 @@ export const Footer: React.FC = () => {
                   className="flex items-center gap-1.5 text-slate-400 hover:text-gold-400 transition-colors duration-150"
                 >
                   <ChevronRight className="w-3.5 h-3.5 text-gold-500/60" />
-                  <span>Admissions 2026–27</span>
+                  <span>Admissions {CURRENT_ACADEMIC_SESSION}</span>
                 </Link>
               </li>
               <li>

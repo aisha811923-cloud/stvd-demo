@@ -9,6 +9,7 @@ import { AdmissionsModalProvider } from "@/context/AdmissionsModalContext";
 import { AdmissionsModal } from "@/components/admissions/AdmissionsModal";
 import { FloatingAdmissionsBadge } from "@/components/admissions/FloatingAdmissionsBadge";
 import SchoolSchema from "@/components/seo/SchoolSchema";
+import { CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 import { getBaseUrl } from "@/lib/constants";
 
 const cinzel = Cinzel({
@@ -46,7 +47,8 @@ export const metadata: Metadata = {
     "best convent schools Udaipur",
     "Saveena schools Udaipur",
     "St Teresa Saveena",
-    "admissions 2026-27 Udaipur",
+    "admissions 2027-28 Udaipur",
+    `admissions ${CURRENT_ACADEMIC_SESSION} Udaipur`,
   ],
   authors: [{ name: "Prabhudasi Sisters of Ajmer" }],
   creator: "St. Teresa Vidya Deep Senior Secondary School",

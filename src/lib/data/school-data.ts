@@ -39,8 +39,10 @@ export const OPERATIONAL_HOURS = {
   },
 };
 
+export const CURRENT_ACADEMIC_SESSION = "2027–2028";
+
 export const ADMISSION_ELIGIBILITY = {
-  session: "2026–2027",
+  session: CURRENT_ACADEMIC_SESSION,
   nurseryAgeLimit: {
     base: "3 Years",
     range: "2 Years 8 Months to 3 Years 8 Months (as of session commencement)",

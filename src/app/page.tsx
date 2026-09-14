@@ -4,6 +4,7 @@ import { BentoStats } from "@/components/home/BentoStats";
 import { CampusGallery } from "@/components/home/CampusGallery";
 import { PhilosophyPillars } from "@/components/home/PhilosophyPillars";
 import { AdmissionsBanner } from "@/components/home/AdmissionsBanner";
+import { CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 
 export const metadata: Metadata = {
   title: "St. Teresa Vidya Deep Senior Secondary School | CBSE Udaipur",
@@ -16,7 +17,8 @@ export const metadata: Metadata = {
     "best convent schools Udaipur",
     "Saveena schools Udaipur",
     "St Teresa Saveena",
-    "admissions 2026-27 Udaipur",
+    "admissions 2027-28 Udaipur",
+    `admissions ${CURRENT_ACADEMIC_SESSION} Udaipur`,
   ],
   openGraph: {
     title: "St. Teresa Vidya Deep Senior Secondary School | CBSE Udaipur",

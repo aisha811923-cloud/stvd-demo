@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { useAdmissionsModal } from "@/context/AdmissionsModalContext";
 import { Button } from "@/components/ui/Button";
-import { SCHOOL_INFO, ADMISSION_ELIGIBILITY } from "@/lib/data/school-data";
+import { SCHOOL_INFO, ADMISSION_ELIGIBILITY, CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 import { SchoolCrest } from "@/components/ui/SchoolCrest";
 
 const GRADE_OPTIONS = [
@@ -240,7 +240,7 @@ export const AdmissionsModal: React.FC = () => {
                     Admissions Callback Desk
                   </h3>
                   <p className="text-[11px] text-gold-400 font-sans tracking-wide">
-                    Academic Year {ADMISSION_ELIGIBILITY.session} • STVDS Udaipur
+                    Session {CURRENT_ACADEMIC_SESSION} • STVDS Udaipur
                   </p>
                 </div>
               </div>

@@ -17,6 +17,7 @@ import {
   CalendarCheck,
 } from "lucide-react";
 import { AdmissionsTriggerButton } from "@/components/ui/AdmissionsTriggerButton";
+import { CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 import { cn } from "@/lib/utils";
 
 type EventCategory = "All Events" | "Academic & PTM" | "Sports & Drill" | "Cultural & Assemblies";
@@ -324,7 +325,7 @@ export const EventsView: React.FC = () => {
               href="/admissions"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gold-gradient text-navy-950 font-semibold text-sm shadow-gold-glow hover:brightness-105 transition-all active:scale-95"
             >
-              <span>Admissions 2026–27</span>
+              <span>Admissions {CURRENT_ACADEMIC_SESSION}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

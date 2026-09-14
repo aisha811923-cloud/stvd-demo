@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AdmissionsTriggerButton } from "@/components/ui/AdmissionsTriggerButton";
-import { SCHOOL_INFO, ADMISSION_ELIGIBILITY } from "@/lib/data/school-data";
+import { SCHOOL_INFO, ADMISSION_ELIGIBILITY, CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 import {
   FileText,
   Phone,
@@ -17,18 +17,19 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Admissions 2026–27 | Criteria & Process",
+  title: "Admissions 2027–2028 | Criteria & Process",
   description:
-    "Admissions open for 2026–27 at St. Teresa Vidya Deep, Udaipur. CBSE affiliated, Nursery to Class XII. Age criteria, documentation guidelines, and callback request.",
+    "Admissions open for 2027–2028 at St. Teresa Vidya Deep, Udaipur. CBSE affiliated, Nursery to Class XII. Age criteria, documentation guidelines, and callback request.",
   keywords: [
-    "School Admission Udaipur 2026-27",
+    "School Admission Udaipur 2027-28",
+    "School Admission Udaipur 2027–2028",
     "CBSE School Admission Saveena",
     "Age Criteria Nursery Udaipur CBSE",
     "Class 11 Admission Science Commerce Udaipur",
     "St Teresa Vidya Deep Admissions",
   ],
   openGraph: {
-    title: "Admissions Open 2026–27 | St. Teresa Vidya Deep Sr. Sec. School",
+    title: "Admissions Open 2027–2028 | St. Teresa Vidya Deep Sr. Sec. School",
     description:
       "Step-by-step enrollment roadmap, NEP age eligibility criteria, and quick callback request for Nursery through Class XII.",
     url: "https://stteresavidyadeep.org/admissions",
@@ -71,12 +72,12 @@ export default function AdmissionsPage() {
     {
       grade: "Nursery",
       minAge: "2 Years 8 Months to 3 Years 8 Months (Base: 3 Years)",
-      asOf: "As of session commencement (March 31, 2026)",
+      asOf: "As of session commencement (March 31, 2027)",
       wing: "Foundational Wing",
     },
-    { grade: "LKG (Lower Kindergarten)", minAge: "4 Years Complete", asOf: "As of March 31, 2026", wing: "Foundational Wing" },
-    { grade: "UKG (Upper Kindergarten)", minAge: "5 Years Complete", asOf: "As of March 31, 2026", wing: "Foundational Wing" },
-    { grade: "Class I", minAge: "6 Years Complete", asOf: "As of March 31, 2026 (NEP 2020)", wing: "Primary Wing" },
+    { grade: "LKG (Lower Kindergarten)", minAge: "4 Years Complete", asOf: "As of March 31, 2027", wing: "Foundational Wing" },
+    { grade: "UKG (Upper Kindergarten)", minAge: "5 Years Complete", asOf: "As of March 31, 2027", wing: "Foundational Wing" },
+    { grade: "Class I", minAge: "6 Years Complete", asOf: "As of March 31, 2027 (NEP 2020)", wing: "Primary Wing" },
     { grade: "Classes II to X", minAge: "Progressive Age Criteria", asOf: "Based on previous school TC", wing: "Primary / Middle / Secondary" },
     { grade: "Class XI (Science / Comm / Arts)", minAge: "Class X Board Clearance", asOf: "AISSE / Board Marksheet", wing: "Senior Secondary" },
   ];
@@ -94,7 +95,7 @@ export default function AdmissionsPage() {
         <div className="max-w-7xl mx-auto text-center space-y-6 relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-crimson-800/80 text-gold-400 border border-gold-500/30 text-xs font-semibold uppercase tracking-wider">
             <span className="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse" />
-            <span>Academic Session 2026–27 Open • Saveena, Udaipur</span>
+            <span>Academic Session {CURRENT_ACADEMIC_SESSION} Open • Saveena, Udaipur</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-tight">
@@ -170,7 +171,7 @@ export default function AdmissionsPage() {
           <SectionHeading
             eyebrow="Statutory Criteria"
             title="Age Eligibility Guidelines (NEP 2020 & CBSE)"
-            description="Minimum age requirements calculated as of March 31, 2026 for the incoming academic year."
+            description="Minimum age requirements calculated as of March 31, 2027 for the incoming academic year."
             align="center"
           />
 
@@ -311,7 +312,7 @@ export default function AdmissionsPage() {
 
               <a
                 href={`https://wa.me/${SCHOOL_INFO.whatsapp.replace(/\D/g, "")}?text=${encodeURIComponent(
-                  "Hello St. Teresa Vidya Deep Admissions Office, I would like to inquire regarding 2026-27 admission criteria and fees."
+                  `Hello St. Teresa Vidya Deep Admissions Office, I would like to inquire regarding ${CURRENT_ACADEMIC_SESSION} admission criteria and fees.`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

@@ -4,6 +4,7 @@ import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { CheckCircle, ClipboardCheck, Award, Users, ShieldCheck, ArrowRight } from "lucide-react";
 import { AdmissionsTriggerButton } from "@/components/ui/AdmissionsTriggerButton";
+import { CURRENT_ACADEMIC_SESSION } from "@/lib/data/school-data";
 import { fadeRise, staggerFast } from "@/lib/animations";
 
 export const AssessmentFrameworkMotion: React.FC = () => {
@@ -107,7 +108,7 @@ export const AssessmentFrameworkMotion: React.FC = () => {
             Academic Year Runs April to March
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
-            Divided into two balanced terms separated by a winter break. Admissions inquiries for the upcoming 2026–27 academic session are currently active.
+            Divided into two balanced terms separated by a winter break. Admissions inquiries for the upcoming {CURRENT_ACADEMIC_SESSION} academic session are currently active.
           </p>
         </div>
 
@@ -116,7 +117,7 @@ export const AssessmentFrameworkMotion: React.FC = () => {
           size="lg"
           className="shrink-0 shadow-gold-glow"
         >
-          Apply for 2026-27 Session
+          Apply for {CURRENT_ACADEMIC_SESSION} Session
           <ArrowRight className="w-4 h-4 ml-1.5" />
         </AdmissionsTriggerButton>
       </motion.div>
