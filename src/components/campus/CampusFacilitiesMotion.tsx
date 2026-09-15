@@ -69,7 +69,7 @@ const FACILITIES: Facility[] = [
       "1:1 student-to-PC terminal allocation during sessions",
       "Fiber-optic internet with firewall web safety filters",
       "Interactive multimedia projection for coding lectures",
-      "Full air-conditioning and central power backup (UPS)",
+      "Dedicated high-speed workstations with central power backup (UPS)",
     ],
   },
   {
@@ -112,7 +112,7 @@ const FACILITIES: Facility[] = [
     specs: [
       "Regulated school bus and van transit across Udaipur corridors",
       "Key residential connectivity: Saveena, Sector 14, Sector 11, Hiran Magri & Goverdhan Vilas",
-      "Verified drivers and attentive female support staff on junior routes",
+      "Verified, professional drivers trained in student safety protocols",
       "GPS-monitored fleet adhering to strict safety and punctual arrival protocols",
     ],
   },

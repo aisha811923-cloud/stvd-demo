@@ -223,7 +223,7 @@ export const BentoStats: React.FC = () => {
                 Specialized Laboratories
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Dedicated scientific arenas for Physics, Chemistry, Biology, Mathematics, and an air-conditioned digital IT Computer Suite with 1:1 terminal access.
+                Dedicated scientific arenas for Physics, Chemistry, Biology, Mathematics, and a modern digital IT Computer Suite with 1:1 terminal access.
               </p>
             </div>
 
