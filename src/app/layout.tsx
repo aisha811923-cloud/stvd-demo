@@ -54,10 +54,10 @@ export const metadata: Metadata = {
   creator: "St. Teresa Vidya Deep Senior Secondary School",
   icons: {
     icon: [
-      { url: "/images/brand/crest.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon.png", sizes: "48x48", type: "image/png" },
       { url: "/images/brand/crest.png", sizes: "192x192", type: "image/png" },
     ],
-    shortcut: "/images/brand/crest.png",
+    shortcut: "/icon.png",
     apple: [
       { url: "/images/brand/crest.png", sizes: "180x180", type: "image/png" },
     ],
@@ -70,12 +70,22 @@ export const metadata: Metadata = {
     siteName: "St. Teresa Vidya Deep",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: `${getBaseUrl()}/opengraph-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "St. Teresa Vidya Deep Senior Secondary School Crest & Institutional Preview",
+        type: "image/png",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "St. Teresa Vidya Deep Sr. Sec. School, Udaipur",
     description:
       "Official admissions and academic portal for St. Teresa Vidya Deep Sr. Sec. School, Saveena, Udaipur.",
+    images: [`${getBaseUrl()}/opengraph-image.png`],
   },
   robots: {
     index: true,
